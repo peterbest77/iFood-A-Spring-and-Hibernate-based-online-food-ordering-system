@@ -14,9 +14,7 @@ public class Customer implements Serializable {
     private String password;
     private boolean enabled;
 
-    //cascade 和joinColumn是干嘛的？？？
-    //cascade的意思就是有这个注释的变量，如果这个值子其他改变了他也改变， CascadeType.ALL的意思所有更删改查的变化它都会变化
-    //@JoinColumn的意思是一个customer只有一个cart
+    
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(unique = true)
     private Cart cart;
