@@ -1,3 +1,0 @@
-dao层其实就是对数据库进行更删改查，并穿件transaction， submit，或者rollback
-
-问一下leftJoin？？？？
