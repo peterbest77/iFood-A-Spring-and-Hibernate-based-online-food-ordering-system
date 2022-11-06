@@ -1,0 +1,4 @@
+controller为控制层，前端的请求，通过tomcat映射过来，controller进行控制，因为用spring的缘故
+会有控制反转，也就是说spring会创建对应的object并将object放入IoC容器中，再将这个object注入到
+所需要的地方，可以减少耦合，说白了controller的用处就是接受请求，并通过service层调用dao层，进行数据
+更删改查，并通过model层将数据关联进数据库

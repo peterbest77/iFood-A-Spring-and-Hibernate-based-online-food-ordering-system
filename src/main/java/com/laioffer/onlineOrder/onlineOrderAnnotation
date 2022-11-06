@@ -1,0 +1,43 @@
+表现层
+springMVC接受请求
+项目组没有设计v
+c是向逻辑层发请求
+m是取回的数据或者传进来的数据，交给逻辑层处理，狭义来讲
+广义来讲，mvc其实包括逻辑层和数据层
+这里就狭义理解就行
+
+逻辑层
+spring控制反转
+减少耦合
+IoC
+dependency injection
+
+数据层
+和数据库链接映射，不处理逻辑，只进行数据的更删改查
+
+
+springSecurity框架
+
+keyPair:
+
+
+doordash后端总结：
+spring的使用
+和hibernate的使用
+通过spring可以降低项目开发的复杂度
+
+spring MVC框架 web application
+controller是前端url解析，和前端交互的模块前面还有dispatcherServlet这是自带的
+service完成业务逻辑的实现
+dao是事先更删改查，对数据库进行交互
+entity就是database是db的映射
+
+/order/{xxx}最多返回一个值 @PathVariable
+/order?name = xxx 可以返回一类值 @RequestParam
+dispatcherServlet 统一调度（controller）大家都用的功能
+
+onetomany 和manytoone主要看join不join这个表想看所有数据就加上
+这个注释在哪里fk在哪里
+
+
+
