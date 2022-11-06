@@ -34,7 +34,7 @@ public class ApplicationConfig {
 
         return dataSource;
     }
-    //这个方法是干嘛用的？为什么不bean，因为值在这个类里用到了
+  
     private final Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
