@@ -1,2 +1,0 @@
-entity就相当于数据库，这个就是model就是实体类对数据库的映射，其中一对多，多对一，一对一都在实体类model层完成
-cart和orderItem和menuItem的关系？？
