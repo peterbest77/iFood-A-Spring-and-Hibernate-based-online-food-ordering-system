@@ -23,8 +23,7 @@ public class Restaurant implements Serializable {
     private String phone;
 
     private String imageUrl;
-    //这样生成的表会leftJoin进去MenuItem，表中会多个MenuItem这个column？？？？？？
-    //cascade的意思是将List<MenuItem>导入表中，让两表关联， fetch是立马拿数据或稍后拿，leftJoin是因为这是主表，所有数据必须保存
+   
     @OneToMany(mappedBy = "restaurant",  cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
     private List<MenuItem> menuItemList;
