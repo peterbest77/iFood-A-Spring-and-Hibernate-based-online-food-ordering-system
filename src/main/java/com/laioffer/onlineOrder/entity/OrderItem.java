@@ -19,9 +19,7 @@ public class OrderItem implements Serializable {
     @ManyToOne
     private MenuItem menuItem;
 
-    //多对一，一个cart可以有多个orderItem，这些orderItem都是一个cart订的
-    //@JsonIgnore意思是不往前端返回Cart的json数据，这个是和谁形成循环？？？？
-    //是和orderItem形成循环因为cart里面也有orderItem
+ 
     @ManyToOne
     @JsonIgnore
     private Cart cart;
