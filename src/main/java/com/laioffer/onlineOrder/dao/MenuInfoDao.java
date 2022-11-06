@@ -19,9 +19,8 @@ public class MenuInfoDao {
 
     public List<Restaurant> getRestaurants(){
     try(Session session = sessionFactory.openSession()) {
-        //session写里面自动close session
-        //返回Restaurant List只能用这个，setResultTransformer是去重，因为在Restaurant实体类中会和MenuItemList进行leftJoin
-        //这会产生每个MenuItem都有个restaurant与之对应，所以会重复，所以要去重？？？？？
+      
+     
         return session.createCriteria(Restaurant.class)
                 .setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY)
                 .list();
