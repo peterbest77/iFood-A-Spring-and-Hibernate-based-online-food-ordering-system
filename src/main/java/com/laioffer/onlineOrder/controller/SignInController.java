@@ -14,9 +14,7 @@ import java.util.Map;
 
 @Controller
 public class SignInController {
-    //ObjectMapper返回的是json对象
-    //底下怎么检验value是不是true的？？？？ 这个值是不是true都行只要有个值就行，下回问问后端老师
-    //登陆成功显示什么？？？ Answer: we only process the failed login request here, if login successfully, it will automatically redirect to home page
+ 
 
     private final ObjectMapper objectMapper = new ObjectMapper();
     @RequestMapping(value = "/login")
